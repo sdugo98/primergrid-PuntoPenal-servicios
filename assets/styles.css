@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Montserrat", "sans-serif";
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 10px;
+}
+
+.header{
+    grid-area: 1 / 1 / span 1 / span 5;
+}
+
+.nav{
+    display: flex;
+    background-color: #6231e7ea;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    border-bottom: 5px;
+    border-color: black;
+
+}
+
+.marca{
+    display: flex;
+}
+
+.marca a{
+    margin-top: 0px;
+    align-self: center;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul li a:hover{
+    background: #000000af;
+    color: #fff;
+    border-radius: 5px;
+}
+
+ul li a{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: .3s ease all;
+}
+
+.section-info{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(2, 1fr);
+}
+
+
+.eventos-info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #766ef9;
+    padding: 5px;
+    border: 1px solid #000000;
+    grid-area: 1 / 1 / span 2 / span 3;
+    margin: 10px 2px 10px 2px;
+}
+
+.eventos-info h1{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.eventos-info p{
+    justify-content: start;
+    align-items: start;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.eventos-info button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 30px;
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+.eventos-info button:hover {
+ background: #fff;
+ color: #000000;
+}
+
+
+.lavados-info{
+    background-color: #4ccdc0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    border: 1px solid #000000;
+    grid-area: 1 / 1 / span 2 / span 3;
+    margin: p0x 2px 10px 2px;
+}
+
+.lavados-info h1{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.lavados-info p{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.lavados-info button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 30px;
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+.lavados-info button:hover {
+    background: #fff;
+    color: #000000;
+   }
+
+.imagen-info{
+    background-image: url("/img/copas.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 10px;
+    border: 1px solid #000000;
+    grid-area: 1 / 4 / span 2 / span 2;
+}
+
+.imagen-info-2{
+    background-image: url("/img/camisetas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 10px 0px;
+    border: 1px solid #000000;
+    grid-area: 1 / 4 / span 2 / span 2;
+}
